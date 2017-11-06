@@ -1,0 +1,74 @@
+* {
+	font-size: 24px;
+}
+
+.wrapper{
+	width: 80%;
+	border: 2px solid black;
+	margin: 0 auto; /*will center wrapper*/
+	padding: 20px;
+
+}
+
+/*:link(unvisited link)*/
+
+a:link {
+	color: #8C001A;
+}
+
+/*:link(visited link)*/
+a:visited {
+	color: #FF0080
+}
+
+/*:link(hover)*/
+a:hover {
+	background-color: #F5D5BC;
+}
+
+/*:link(focus)*/
+a:focus {
+	color: #C87533;
+}
+
+/*main (hover)*/
+main.wrapper:hover {
+	background-color: lightblue;
+}
+
+a:active {
+	color: #663399;
+}
+
+p,
+#test,
+.spans,
+.box p {
+	color: green;
+}
+
+/*attribute selector*/
+a[target="_blank"] {
+	background-color: yellow;
+}
+
+p span#dark_bg {
+	color: white;
+	background-color: black;
+}
+
+div + p {
+	background-color: lightgreen;
+}
+
+div ~ p {
+	background-color: red
+}
+
+div > p {
+	background-color: blue
+}
+
+div div h3 {
+	background-color: orange;
+}
