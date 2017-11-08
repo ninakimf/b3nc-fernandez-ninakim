@@ -50,7 +50,13 @@ echo('Hello world!');
 
 :v:
 
+## Tables
 
+| firstname | lastname  |
+|:----------|:----------|
+| Jessica   | Carlile   |
+| Kat       | Smorodina |
+| Kim       | Fernandez |
 
 
 

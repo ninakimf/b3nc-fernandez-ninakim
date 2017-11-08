@@ -2,11 +2,13 @@
 * {
 	margin: 0 auto;
 	padding: 0 auto;
+	box-sizing: border-box; /*avoid overflow of elements*/
+	/*box-sizing: content-box; default value of box sizing*/
 }
 
 .wrapper {
 	border: 1px solid pink;
-	width: 70%;
+	width: 48%;
 	margin: 0 auto;
 	padding: 10px;
 }
@@ -37,6 +39,7 @@ div.wrapper > div > div {
 	text-align: center;
 	border-radius: 5px;
 	margin-top: 25px;
+	width: 50%;
 }
 
 }
@@ -47,7 +50,11 @@ strong {
 }
 
 p {
-	padding: 20px 0px 20px 10px; 
+	padding: 14px; 
 	margin-bottom: 50px;
 	margin-top: 25px;
+}
+span {
+	font-size: 2em;
+	color: red;
 }
