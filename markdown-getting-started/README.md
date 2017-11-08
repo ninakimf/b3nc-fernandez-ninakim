@@ -40,15 +40,15 @@ echo('Hello world!');
 
 ## Emoji
 
-	:monkey: 
+:monkey: 
 
-	:star2:	
+:star2:	
 
-	:speech_ballon:
+:speech_ballon:
 
-	:zap:
+:zap:
 
-	:v:
+:v:
 
 
 
