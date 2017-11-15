@@ -1,14 +1,25 @@
 * {
 	margin: 0;
 	padding: 0;
+	/*box-sizing: border-box;*/
+}
+
+.clear:after	{
+	content: ""; /*empty string or invisble element*/
+	clear: both;
+	display: block;
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
 }
 
 .header {
 	background-color: black;
 	width: 700px;
 	padding: 10px;
-	position: absolute;
-
+	margin: 0 auto;
 }
 
 .columns {
@@ -20,6 +31,13 @@
 	position: relative;
 }
 
+.body {
+	background-color: black;
+	width: 700px;
+	padding: 10px;
+	position: relative;
+	margin: 0 auto;
+}
 
 .caption {
 	border: 1px solid white;
@@ -27,8 +45,8 @@
 	height: 150px;
 	margin: 10px;
 	float: left;
-	position: relative;
 	padding: 10px 10px 50px 10px;
+	position: relative;
 }
 
 .gray-box {
@@ -37,33 +55,31 @@
 	height: 150px;
 }
 
-.clear:after	{
-	content: ""; /*empty string or invisble element*/
-	clear: both;
-	display: block;
+.cap {
+	text-align: center;
+	padding: 20px;
 }
 
-.container {
+.paragraph {
+	background-color: black;
+	width: 700px;
+	padding: 10px;
 	position: relative;
-	float: right;
+	margin: 0 auto;
 }
 
 h2 {
 	color: white;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 	margin-bottom: 10px;
 
 }
 
 p {
 	color: white;
-	font-size: 14px;
+	font-size: 1em;
 }
 
-.cap {
-	text-align: center;
-	padding: 20px;
-}
 .picture {
 	width: 150px;
 	height: 150px;
@@ -71,16 +87,32 @@ p {
 	background-color: gray;
 	position: relative;
 	float: left;
+	/*margin-top: 25px;*/
 }
 
 .article {
-	position: relative;
-	float: right;
+	background-color: black;
+	width: 700px;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.article-text {
+	/*position: relative;*/
+	float: right;	
+	width: 77%;
 }
 
 .text {
 	font-size: 12px;
 	text-align: justify;
+}
+
+.add-comment {
+	background-color: black;
+	width: 700px;
+	padding: 10px;
+	margin: 0 auto;
 }
 
 .avatar {
@@ -89,8 +121,6 @@ p {
 	height: 50px;
 	position: relative;
 	float: left;
-	margin-top: 20px;
-
 }
 
 .comment-box {
@@ -99,16 +129,15 @@ p {
 }
 
 #textbox {
-	width: 600px;
+	width: 630px;
 	box-sizing: border-box;
 	margin-left: 10px;
 	height: 100px;
-	margin-top: 20px;
-
 }
 
 #add{
 	float: right;
+	margin-right: 10px;
 }
 
 #cancel {
@@ -116,12 +145,186 @@ p {
 	margin-right: 10px;
 }
 
-.hide-overflow {
-	overflow: hidden;
+.comment {
+	background-color: black;
+	width: 700px;
+	padding: 10px;
+	margin: 0 auto;
 }
 
-.comment {
+.comment-text {
+	/*position: relative;*/
+	float: right;	
+	width: 91%;
+}
+
+h4 {
+	color: white;
+	
+	/*text-indent: 10px;*/
+}
+
+/*.name {
+	margin-top: 20px;
+}*/
+
+.ctext {
+	font-size: 12px;
+	text-align: justify-all;
+}
+
+a {
+	font-size: 12px;
+}
+
+.reply {
+	margin-left: 10px;
+}
+
+.border-line {
+	border-left: 1px solid white;
+	margin-top: 10px;
+}
+
+.avatar-com {
+	background-color: gray;
+	width: 50px;
+	height: 50px;
 	position: relative;
+	float: left;
+
+}
+
+.com-text {
+	/*position: relative;*/
+	float: right;	
+	width: 91%;
+}
+
+.avatar-com2 {
+	background-color: gray;
+	width: 50px;
+	height: 50px;
+	position: relative;
+	float: left;
+	margin-top: 35px;
+}
+
+.diy-bg {
+	background-color: black;
+	width: 500px;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.photo {
+	background-color: gray;
+	width: 200px;
+	height: 100px;
 	float: left;
 }
 
+
+.diy-text {
+	color: gray;
+	font-size: 12px;
+	/*margin-left: 20px;*/
+}
+
+.diy {
+	/*position: relative;*/
+	float: right;	
+	width: 59%;
+}
+
+.smart {
+	background-color: black;
+	width: 500px;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.smart-text {
+	float: left;	
+	width: 59%;
+}
+
+.smart-pic {
+	background-color: gray;
+	width: 200px;
+	height: 100px;
+	float: right;
+}
+
+.apple {
+	background-color: black;
+	width: 700px;
+	padding: 10px;
+	margin: 0 auto;
+	/*position: absolute;*/
+}
+
+.apple-text {
+	color: white;
+	float: left;
+	width: 30%;
+	height: 300px;
+}
+
+/*.column-container {
+	width: 69%
+}*/
+
+.apple-column {
+	width: 150px;
+	height: 150px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	float: right;
+	background-color: grey;
+	position: relative;
+	overflow: hidden;
+}
+
+.baguio {
+	background-color: black;
+	width: 1000px;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.baguio-left{
+	width: 60%;
+}
+
+.caption1 {
+	border: 1px solid white;
+	width: 150px;
+	height: 150px;
+	margin: 10px;
+	float: left;
+	padding: 5px;
+	position: relative;
+}
+
+.gray-box1 {
+	background-color: grey;
+	width: 150px;
+	height: 90px;
+}
+
+.cap1 {
+	text-align: center;
+	padding: 20px;
+}
+
+.baguio-right {
+	width: 40%;
+	float: right;
+}
+
+.large-grey {
+	background-color: gray;
+	height: 200px;
+	/*float: right;*/
+}
