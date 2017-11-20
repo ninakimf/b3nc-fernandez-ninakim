@@ -16,11 +16,13 @@
 }
 
 .header {
-	background-color: black;
+	background-color: #34ACAF;
 	width: 700px;
 	padding: 10px;
 	margin: 0 auto;
+	border: 5px dotted #9D538E;
 }
+
 
 .columns {
 	width: 150px;
@@ -31,16 +33,18 @@
 	position: relative;
 }
 
+
 .body {
-	background-color: black;
+	background-color: #34ACAF;
 	width: 700px;
 	padding: 10px;
 	position: relative;
 	margin: 0 auto;
+	border: 5px dotted #9D538E;
 }
 
 .caption {
-	border: 1px solid white;
+	border: 1px solid #9D538E;
 	width: 150px;
 	height: 150px;
 	margin: 10px;
@@ -61,22 +65,23 @@
 }
 
 .paragraph {
-	background-color: black;
+	background-color: #34ACAF;
 	width: 700px;
 	padding: 10px;
 	position: relative;
 	margin: 0 auto;
+	border: 5px dotted #9D538E;
 }
 
 h2 {
-	color: white;
+	color: #9D538E;
 	/*margin-top: 20px;*/
 	margin-bottom: 10px;
 
 }
 
 p {
-	color: white;
+	color: #692DAC;
 	font-size: 1em;
 }
 
@@ -91,10 +96,11 @@ p {
 }
 
 .article {
-	background-color: black;
+	background-color: #34ACAF;
 	width: 700px;
 	padding: 10px;
 	margin: 0 auto;
+	border: 5px dotted #9D538E;
 }
 
 .article-text {
@@ -109,10 +115,11 @@ p {
 }
 
 .add-comment {
-	background-color: black;
+	background-color: #34ACAF;
 	width: 700px;
 	padding: 10px;
 	margin: 0 auto;
+	border: 5px dotted #9D538E;
 }
 
 .avatar {
@@ -146,10 +153,11 @@ p {
 }
 
 .comment {
-	background-color: black;
+	background-color: #34ACAF;
 	width: 700px;
 	padding: 10px;
 	margin: 0 auto;
+	border: 5px dotted #9D538E;
 }
 
 .comment-text {
@@ -159,7 +167,7 @@ p {
 }
 
 h4 {
-	color: white;
+	color: #9D538E;
 	
 	/*text-indent: 10px;*/
 }
@@ -182,7 +190,7 @@ a {
 }
 
 .border-line {
-	border-left: 1px solid white;
+	border-left: 1px solid #9D538E;
 	margin-top: 10px;
 }
 
@@ -211,10 +219,11 @@ a {
 }
 
 .diy-bg {
-	background-color: black;
+	background-color: #34ACAF;
 	width: 500px;
 	padding: 10px;
 	margin: 0 auto;
+	border: 5px dotted #9D538E;
 }
 
 .photo {
@@ -226,7 +235,7 @@ a {
 
 
 .diy-text {
-	color: gray;
+	color: #692DAC;
 	font-size: 12px;
 	/*margin-left: 20px;*/
 }
@@ -238,10 +247,11 @@ a {
 }
 
 .smart {
-	background-color: black;
+	background-color: #34ACAF;
 	width: 500px;
 	padding: 10px;
 	margin: 0 auto;
+	border: 5px dotted #9D538E;
 }
 
 .smart-text {
@@ -257,10 +267,11 @@ a {
 }
 
 .apple {
-	background-color: black;
+	background-color: #34ACAF;
 	width: 700px;
 	padding: 10px;
 	margin: 0 auto;
+	border: 5px dotted #9D538E;
 	/*position: absolute;*/
 }
 
@@ -287,10 +298,11 @@ a {
 }
 
 .baguio {
-	background-color: black;
+	background-color: #34ACAF;
 	width: 1000px;
 	padding: 10px;
 	margin: 0 auto;
+	border: 5px dotted #9D538E;
 }
 
 .baguio-left{
@@ -298,7 +310,7 @@ a {
 }
 
 .caption1 {
-	border: 1px solid white;
+	border: 1px solid #9D538E;
 	width: 150px;
 	height: 150px;
 	margin: 10px;
@@ -326,5 +338,37 @@ a {
 .large-grey {
 	background-color: gray;
 	height: 200px;
+	width: 400px;
+	/*float: right;*/
+}
+
+.menu {
+	float: left;
+	margin: 20px 5px 20px 5px;
+	background-color: #9D538E;
+	/*font-size: 20px;*/
+}
+
+.baguio-beautiful {
+	width: 150px;
+	height: 100px;
+	margin-right: 5px;
+	float: left;
+	background-color: gray;
+	/*margin-top: 50px;*/
+}
+
+#beautiful-baguio {
+	float: right;
+	color:  #9D538E;
+}
+
+.baguio-lorem1 {
+	font-size: 12px;
+	/*float: right;*/
+	margin-top: 100px;
+
+}.baguio-lorem {
+	font-size: 12px;
 	/*float: right;*/
 }
