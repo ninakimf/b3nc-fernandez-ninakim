@@ -28,13 +28,20 @@ body {
 .logo {
 	width: 140px;
 	height: 140px;
-	background-color: darkgray;
+	/*background-color: darkgray;*/
+}
+
+.logo > img {
+	width: 140px;
+	height: 140px;
+	border: 5px double #E5268B;
+	border-radius: 50%;
 }
 
 /*NAVIGATION*/
 
 .nav {
-	background-color: lightyellow;
+	background-color: #ABECC0;
 	height: 100%;
 	width: 200px;
 	position: fixed;
@@ -46,10 +53,13 @@ ul {
 
 ul > li {
 	list-style: none;
-	background-color: lightblue;
+	background-color:  #E5268B;
 	margin-bottom: 2px;
 	text-align: center;
 	line-height: 48px;
+	font-family: loved by the king;
+	color: #535353;
+	font-size: 22px;
 	/*padding: 20px;*/
 }
 
@@ -65,33 +75,46 @@ ul > li > a {
 /*BANNER*/
 
 .banner {
-	background-color: skyblue;
+	background-color: #C2A0DB;
 	position: relative;
 	height: 700px;
 
 }
 
 .box {
-	border: 5px solid white;
+	border: 5px dashed #E5268B;
 	text-align: center;
-	width: 40%;
-	padding: 40px;
+	width: 50%;
+	padding: 20px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 
+.box > p {
+	font-size: 20px;
+}
+
 .about {
-	background-color: indianred;
+	background-color: #F3C4A5;
 	min-height: 700px;
 }
 
+h2 {
+	font-family: loved by the king;
+	color: #535353;
+}
+
+h3 {
+	font-family: loved by the king;
+	color: #535353;
+}
 
 /*SEVICES*/
 
 .services {
-	background-color: midnightblue;
+	background-color:  #EEB2CC;
 	min-height: 300px;
 }
 
@@ -102,6 +125,17 @@ ul > li > a {
 .services p {
 	margin: auto 5% 5%;
 	text-align: justify;	
+}
+
+h1 {
+	font-family: dawning of a new day;
+	font-size: 50px;
+	color: #535353;
+}
+
+p {
+	font-family: shadows into light two;
+	/*color: #2046A3;*/
 }
 
 .column {
@@ -118,12 +152,12 @@ ul > li > a {
 }
 
 .projects {
-	background-color: crimson;
+	background-color: #F9EE62;
 	min-height: 300px;
 }
 
 .gallery {
-	background-color: orange;
+	background-color:  #86C6EA;
 	min-height: 400px;
 }
 
@@ -146,8 +180,12 @@ ul > li > a {
 /*FOOTER*/
 
 .footer {
-	background-color: green;
+	background-color: #EFD1C6;
 	min-height: 70px;
+}
+
+.footer > small {
+	font-family: shadows into light two;
 }
 
 .contact {
@@ -156,8 +194,8 @@ ul > li > a {
 
 img[alt*="Social"] {
 	height: 20px;
-	width: 20px;
-	border: 1px solid black;
+	width: 25px;
+	/*border: 1px solid black;*/
 	border-radius: 50%;
 }
 
