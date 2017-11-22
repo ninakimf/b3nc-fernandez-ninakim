@@ -58,3 +58,114 @@ body {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+.item6 {
+	height: 300px;
+	width: 500px;
+	border: 1px solid black;
+	position: relative;
+}
+
+.item6 > img {
+	height: 100px;
+	width: 100px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	/*transform: translate(0, 0%);*/
+}
+
+.item7, 
+.item8,
+.item10 {
+	width: 500px;
+	height: 150px;
+	border: 1px solid black;
+	position: relative;
+}
+
+.item7 > img,
+.item8 > img {
+	width: 50px;
+	position: absolute;
+}
+
+.item7 > img[src*="sun"],
+.item8 > img[src*="sun"] {
+	top: 0;
+	left: 0;
+}
+
+.item7 > img[src*="coconut"],
+.item8 > img[src*="coconut"] {
+	bottom: 0;
+	right: 0;
+}
+
+
+.item8 > p {
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+.item9 > img {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+}
+
+/*.item10 > p {
+	position: absolute;
+	top: 50%;
+	left: 30%;
+}*/
+.item10 > img {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+}
+
+.item10 > span {
+	line-height: 150px;
+	position: absolute;
+}
+
+.item11,
+.item12 {
+	border: 1px solid black;
+	height: 180px;
+	width: 500px;
+	/*position: relative;*/
+	text-align: center;
+}
+
+.item11 > img,
+.item12 >img {
+	height: 100px;
+}
+
+.item12 > h1,
+.item12 > p {
+	background-color: red;
+}
+
+.item13 {
+	text-align: center;
+}
+
+th {
+	background-color: black;
+	color: white;
+}
+
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+	padding: 10px;
+}
+
+th, td {
+}
