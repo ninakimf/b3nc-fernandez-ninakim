@@ -1,0 +1,60 @@
+/* css reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: lightgrey;
+}
+
+.wrapper {
+	background-color: #fff; /* white */
+	width: 80%;
+	margin: 20px auto;
+	padding: 20px;
+}
+
+.item1,
+.item2 {
+	height: 150px;
+	width: 150px;
+	background-color: red;
+}
+
+.item2 {
+	border-left: 10px solid blue;
+	border-right: 10px solid blue;
+}
+
+.item3 {
+	border: 1px solid black;
+	border-radius: 0 10px 0 10px;
+	padding: 10px;
+	display: inline;
+
+}
+
+.item4 {
+	background-color: lightpink;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.item5 {
+	background-color: lightpink;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	/*text-align: center;*/
+	position: relative;
+}
+
+.text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
