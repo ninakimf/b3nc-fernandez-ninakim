@@ -1,0 +1,242 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #C0BCB6
+}
+
+.wrapper {
+	width: 940px;
+	margin: 0 auto;
+	/*position: relative;*/
+}
+
+.header {
+	/*text-align: center;*/
+	paddingt: 50px;
+	/*margin: 20px;*/
+	/*position: relative;*/
+}
+
+.header > h1 {
+	/*position: absolute;*/
+	top: 0;
+	left: 25%;
+	padding: 20px;
+	font-family: dawning of a new day;
+	font-size: 50px;
+	color: #E3177A;
+}
+
+.menu {
+	background-color:  #F3C4A5;
+	/*width: 700px;*/
+	border: 2px dotted #E3177A;
+	height: 30px;
+	/*padding: 10px;*/
+
+}
+
+.menu > ul > li {
+	float: left;
+	/*background-color: #FF717E;*/
+	margin-right: 50px;
+	margin-left: 20px;
+	list-style: none;
+	font-size: 20px;
+	font-family: loved by the king;
+}
+
+.clear:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+.social {
+	text-decoration: none;
+}
+
+.social:link {
+	color: #313A83; 
+}
+
+.social:hover {
+	background-color: #9CC089;
+}
+
+.social:focus {
+	background-color: #9CC089;
+}
+
+.social:active {
+	background-color: #9CC089;
+}
+
+.content {
+	width: 940px;
+	padding: 20px;
+}
+
+.content-right {
+	width: 640px;
+	float: right;
+}
+
+.main-pic {
+	float: right;
+	width: 640px;
+	padding: 20px;
+}
+
+.photo {
+	width: 614px;
+	height: 375px;
+	border: 5px solid #F3C4A5;
+}
+
+.gallery > h2,
+.about-us > h2,
+.adopt-one > h2 {
+	float: right;
+	font-family: loved by the king;
+	color: #299CA7;
+	font-size: 35px;
+	letter-spacing: 5px;
+}
+
+.thumbnails {
+	/*width: 614px;*/
+	float: right;
+}
+
+.thumbnails > .thumb > img {
+	/*float: right;*/
+	height: 95px;
+	width: 145px;
+	margin-left: 10px;
+	border: 5px solid #F3C4A5;
+}
+
+.thumb:link {
+	opacity: 0.5;
+}
+
+.thumb:hover {
+	opacity: 1;
+}
+.about-us,
+.adopt-one {
+	float: right;
+	margin-top: 50px;
+	/*border-top: 10px dotted #E3177A;*/
+}
+
+.about-us > img,
+.adopt-one > img {
+	/*float: right;*/
+	height: 75px;
+	width: 640px;
+}
+
+.about-us > h2{
+	margin-top: 20px;
+}
+
+.about-us > p,
+.adopt-one > p {
+	float: right;
+	text-align: right;
+	margin: 5px;
+	color: #36354B;
+	font-family: shadows into light two;
+}
+
+.content-left {
+	width: 280px;
+}
+
+.search {
+	width: 250px;
+	height: 74px;
+	background-color: #EEA0A6;
+	margin-top: 80px;
+	float: left;
+}
+
+#search {
+	height: 30px;
+	margin: 20px 0 25px 20px;
+
+}
+
+#submit {
+	height: 30px;
+	width: 30px;
+	background-color: #F3C4A5;
+	font-family: shadows into light two;
+}
+
+.blog,
+.our-cats {
+	/*background-color: #F3C4A5;*/
+	/*height: 30px;*/
+	width: 250px;
+	/*margin-top: 30px;*/
+	/*float: left;*/
+}
+
+.blog-bg,
+.our-cats-bg {
+	background-color: #F3C4A5;
+	height: 30px;
+	width: 250px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	float: left;
+}
+
+.blog > .blog-bg > h2,
+.our-cats > .our-cats-bg > h2 {
+	text-align: center;
+	font-family: loved by the king;
+	color: #299CA7;
+	font-size: 20px;
+	letter-spacing: 5px;
+}
+
+.content-left > .search > .blog > ul > li,
+.content-left > .search > .our-cats > ul > li {
+	list-style: square;
+	margin: 10px 5px 5px 30px;
+	color: #36354B;
+	font-family: shadows into light two;
+	font-size: 14px;
+}
+
+.blog-post:link,
+.our-cats:link {
+	color: #36354b;
+	text-decoration: none;
+}
+
+.blog-post:hover,
+.cats:hover {
+	background-color: #9CC089;
+}
+
+.footer {
+	width: 940px;
+	height: 20px;
+	background-color: #F3C4A5;
+	text-align: center;
+}
+
+#copy {
+	color: #36354B;
+	text-align: center;
+	font-family: shadow into light two;
+}
