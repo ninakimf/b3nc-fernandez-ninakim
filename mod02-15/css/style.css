@@ -218,7 +218,7 @@ body {
 }
 
 .blog-post:link,
-.our-cats:link {
+.cats:link {
 	color: #36354b;
 	text-decoration: none;
 }
