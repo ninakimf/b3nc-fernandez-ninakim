@@ -1,0 +1,382 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fff;
+}
+
+.clear:after {
+	clear: "";
+	display: block;
+	clear: both;
+}
+
+@media only screen and (max-width: 400px) {
+
+	.jumbotron {
+		/*margin-top: 50px;*/
+		/*padding: 0;*/
+	    background-image: url(../img/poblacion.jpg);
+	    background-position: 0% 40%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 500px;
+	    /*top: 50%;*/
+		left: 50%;
+		transform: translate(0%, 12%);
+	}
+
+	.btn {
+		opacity: 0.7;
+	}
+
+	.jumbotron-cafe > h1,
+	.jumbotron-rooftop > h1, 
+	.jumbotron-bars > h1, 
+	.jumbotron-restaurants > h1 {
+		top: 50%;
+		transform: translate(0%, 60%);
+	}
+
+	.jumbotron-rooftop {
+		/*margin-top: 50px;*/
+		/*padding: 0;*/
+	    background-image: url(../img/rooftop.jpg);
+	    background-position: 0% 40%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 100px;
+		text-align: center;
+		border-radius: 6px;
+
+	}
+
+	.jumbotron-cafe {
+		background-image: url(../img/cafe.jpg);
+	    background-position: 0% 60%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 100px;
+		text-align: center;
+		border-radius: 6px;
+	}
+
+	.jumbotron-bars {
+		background-image: url(../img/bar.jpg);
+	    background-position: 0% 20%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 100px;
+		text-align: center;
+		border-radius: 6px;
+	}
+
+	.jumbotron-restaurants {
+		background-image: url(../img/restaurant.jpg);
+	    background-position: 0% 70%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 100px;
+		text-align: center;
+		border-radius: 6px;
+	}
+
+	.jumbo > a {
+		text-decoration: none;
+	}
+
+	.jumbo {
+		/*margin-top: 50px;*/
+		/*padding: 50px;*/
+	}
+
+	.jumbo > h2 {
+		margin-top: 50px;
+		border-bottom: 2px solid red;
+
+	}
+
+	.jumbotron-cafe:hover,
+	.jumbotron-rooftop:hover,
+	.jumbotron-bars:hover,
+	.jumbotron-restaurants:hover {
+		opacity: 0.5;
+	}
+
+	.footer {
+		background-color: black;
+		color: white;
+		margin-top: 30px;
+		height: 300px;
+	}
+
+	.subscribe {
+		padding-top: 10px;
+	}
+
+	.btn-subscribe {
+		border-radius: 5px;
+	}
+
+	.form-group {
+		color: black;
+	}
+	
+
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+		.jumbotron {
+		/*margin-top: 50px;*/
+		/*padding: 0;*/
+	    background-image: url(../img/poblacion.jpg);
+	    background-position: 0% 50%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 500px;
+	    top: 50%;
+		/*left: 50%;*/
+		transform: translate(0%, 20%);
+	}
+
+	.btn {
+		opacity: 0.7;
+	}
+
+
+
+	.jumbotron-cafe > h1,
+	.jumbotron-rooftop > h1, 
+	.jumbotron-bars > h1, 
+	.jumbotron-restaurants > h1 {
+		top: 50%;
+		transform: translate(0%, 60%);
+	}
+
+	.jumbotron-rooftop {
+		/*margin-top: 50px;*/
+		/*padding: 0;*/
+	    background-image: url(../img/rooftop.jpg);
+	    background-position: 0% 40%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 100px;
+		text-align: center;
+		border-radius: 6px;
+	}
+
+	.jumbotron-cafe {
+		background-image: url(../img/cafe.jpg);
+	    background-position: 0% 60%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 100px;
+		text-align: center;
+		border-radius: 6px;
+	}
+
+	.jumbotron-bars {
+		background-image: url(../img/bar.jpg);
+	    background-position: 0% 20%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 100px;
+		text-align: center;
+		border-radius: 6px;
+	}
+
+	.jumbotron-restaurants {
+		background-image: url(../img/restaurant.jpg);
+	    background-position: 0% 70%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 100px;
+		text-align: center;
+		border-radius: 6px;
+	}
+
+	.jumbo > a {
+		text-decoration: none;
+	}
+
+	.jumbo > h2 {
+		margin-top: 50px;
+		border-bottom: 2px solid red;
+	}
+
+	.jumbo {
+		margin-top: 80px;
+	}
+
+	.jumbotron-cafe:hover,
+	.jumbotron-rooftop:hover,
+	.jumbotron-bars:hover,
+	.jumbotron-restaurants:hover {
+		opacity: 0.5;
+	}
+
+	.footer {
+		background-color: black;
+		color: white;
+		margin-top: 30px;
+		height: 300px;
+		text-align: center; 
+	}
+
+	.subscribe {
+		padding-top: 10px;
+	}
+
+	.btn-subscribe {
+		border-radius: 5px;
+	}
+
+	.form-group {
+		color: black;
+	}
+	
+}
+
+@media only screen and (min-width: 961px) {
+		.jumbotron {
+		/*margin-top: 50px;*/
+		/*padding: 0;*/
+	    background-image: url(../img/poblacion.jpg);
+	    background-position: 0% 50%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 500px;
+	    /*top: 50%;*/
+		/*left: 50%;*/
+		transform: translate(0%, 15%);
+	}
+
+	.btn {
+		opacity: 0.7;
+	}
+
+	.jumbotron-cafe > h1,
+	.jumbotron-rooftop > h1, 
+	.jumbotron-bars > h1, 
+	.jumbotron-restaurants > h1 {
+		top: 50%;
+		transform: translate(0%, 120%);
+		font-size: 25px;
+	}
+
+	.jumbotron-rooftop {
+		/*margin-top: 70px;*/
+		/*padding: 0;*/
+	    background-image: url(../img/rooftop.jpg);
+	    background-position: 0% 40%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 100px;
+		text-align: center;
+		border-radius: 6px;
+	}
+
+	.jumbotron-cafe {
+		background-image: url(../img/cafe.jpg);
+	    background-position: 0% 60%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 100px;
+		text-align: center;
+		border-radius: 6px;
+	}
+
+	.jumbotron-bars {
+		background-image: url(../img/bar.jpg);
+	    background-position: 0% 20%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 100px;
+		text-align: center;
+		border-radius: 6px;
+	}
+
+	.jumbotron-restaurants {
+		background-image: url(../img/restaurant.jpg);
+	    background-position: 0% 70%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 100px;
+		text-align: center;
+		border-radius: 6px;
+	}
+
+	.jumbo > a {
+		text-decoration: none;
+	}
+
+	.jumbo > h2 {
+		margin: 50px 50px 0px 50px;
+		border-bottom: 2px solid red;
+	}
+
+	.jumbo {
+		margin-top: 80px;
+	}
+
+	.jumbotron-cafe:hover,
+	.jumbotron-rooftop:hover,
+	.jumbotron-bars:hover,
+	.jumbotron-restaurants:hover {
+		opacity: 0.5;
+	}
+
+	.footer {
+		background-color: black;
+		color: white;
+		margin-top: 30px;
+		/*height: 300px;*/
+		text-align: center;
+	}
+
+	.subscribe {
+		padding-top: 10px;
+	}
+
+	.btn-subscribe {
+		border-radius: 5px;
+	}
+
+	.form-group {
+		color: black;
+	}
+	
+}
