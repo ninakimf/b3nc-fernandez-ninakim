@@ -6,6 +6,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta http-equiv="X-UA-compatible" content="IE-Edge">
 
+	    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 500px;
+        /*width: 50%*/
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+
 	<title>Explore Poblacion</title>
 
 	<!-- Import bootstrap CSS -->
@@ -74,7 +89,7 @@
 		<div class="jumbotron">
 			<h1>Explore Poblacion!</h1>
 			<p>Find the best spots to eat, chill and drink.</p>
-			<p><a class="btn btn-default btn-lg" href="#" role="button">Explore now</a></p>
+			<p><a class="btn btn-default btn-lg" href="#explore" role="button">Explore now</a></p>
 		</div> <!-- /.jumbotron -->
 		
 
@@ -130,23 +145,143 @@
 			</div> <!-- /.row -->
 		</div> <!-- /.jumbo -->
 
-		<div class="row">
-			
-			<div class="footer col-sm-12">
-				<div class="subscribe col-sm-12 col-lg-12 col-md-12">
-					<h4>Want to receive the latest updates about Poblacion, Makati?</h4>
-					<p>subscribe to our newsletter</p>
-					<div class="form-group">
-						<form method="" action="">
-							<input type="email" name="email" placeholder="your email">
-							<button type="submit" class="btn-subscribe btn-warning">subscribe</button>
-						</form>
-					</div> <!-- /.form-group -->
-				</div> <!-- /.subscribe -->
-			</div> <!-- /.footer -->
-		</div> <!-- /.row -->
-	</div> <!-- /.container -->
 
+		<div class="container clear">
+
+			<div class="row clear">
+
+				<h2 id="explore">Explore now!</h2>
+
+				<div id="map"></div>
+
+			</div>
+		</div><!-- /.container -->
+
+			<div class="row">
+
+				<div class="footer col-sm-12">
+					<div class="subscribe col-sm-12 col-lg-12 col-md-12">
+						<h4>Want to receive the latest updates about Poblacion, Makati?</h4>
+						<p>subscribe to our newsletter</p>
+						<div class="form-group">
+							<form method="" action="">
+								<input type="email" name="email" placeholder="your email">
+								<button type="submit" class="btn-subscribe btn-warning">subscribe</button>
+							</form>
+						</div> <!-- /.form-group -->
+						<div class="social">
+							<h4>Stay Updated</h4>
+							<a href="https://www.facebook.com/ninakimmf"><img src="img/fbb.png"></a>
+						</div>
+					</div> <!-- /.subscribe -->
+				</div> <!-- /.footer -->
+			</div> <!-- /.row -->
+
+	</div> <!-- /.container-fluid -->
+
+
+
+
+	<!-- Import Map -->
+
+	<script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 14.564148, lng: 121.030304},
+          zoom: 17
+        });
+
+         var marker = new google.maps.Marker({
+          position: {lat: 14.563613, lng: 121.029280},
+          map: map,
+          title: 'Ziggurat'
+        });
+
+         var marker = new google.maps.Marker({
+          position: {lat: 14.562829, lng: 121.030707},
+          map: map,
+          title: 'El Chupacabra'
+        });
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.563888, lng: 121.031372},
+          map: map,
+          title: 'Z Hostel'
+        });
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.564646, lng: 121.029499},
+          map: map,
+          title: 'Antidote'
+        });
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.563935, lng: 121.031493},
+          map: map,
+          title: 'Pura Vida'
+        });
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.562664, lng: 121.030023},
+          map: map,
+          title: 'Commune'
+        });    
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.563819, lng: 121.030471},
+          map: map,
+          title: 'Kismet Cafe'
+        });    
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.562719, lng: 121.029334},
+          map: map,
+          title: 'Bean and Yolk'
+        });    
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.563504, lng: 121.029663},
+          map: map,
+          title: 'Filling Station Bar and cafe'
+        });    
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.565105, lng: 121.029732},
+          map: map,
+          title: 'Hummus Elijah'
+        });
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.56399, lng: 121.031507},
+          map: map,
+          title: 'Polilya'
+        });
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.565700, lng: 121.031005},
+          map: map,
+          title: 'Dulo MNL'
+        });
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.562758, lng: 121.032968},
+          map: map,
+          title: 'Holy Smokes'
+        });
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.564074, lng: 121.032157},
+          map: map,
+          title: 'OTO'
+        });
+      }
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTDfd4C-Mcj65Y11gI-BteAXCWMLTwLl4&callback=initMap"
+    async defer></script>
+
+       <script src="https://cdn.jsdelivr.net/gmap3/7.2.0/gmap3.min.js"></script>
 
 	<!-- Import Jquery -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
