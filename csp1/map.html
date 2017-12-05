@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Simple Map</title>
-    <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    
+    <title>Explore Poblacion</title>
+
+      <!-- Import bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+
+  <!-- Import custom CSS -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <style>
       /* Always set the map height explicitly to define the size of the div
@@ -21,30 +29,162 @@
     </style>
   </head>
   <body>
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Poblacion</a>
+        </div> <!-- /.container-fluid -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">History</a></li>
+            <li><a href="#">Rooftop</a></li>
+            <li><a href="#">Cafe</a></li>
+            <li><a href="bars.html">Bars</a></li>
+            <li><a href="#">Restaurants</a></li>
+            <li><a href="map.html">Map</a></li>
+            </li> <!-- /.dropdown -->
+          </ul> <!-- /.nav navbar -->
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav> <!-- /.nav navbar-inverse -->
+
     <div id="map"></div>
 
+    <div class="row">
 
-    <script>
+        <div class="footer col-sm-12">
+          <div class="subscribe col-sm-12 col-lg-12 col-md-12">
+            <h4>Want to receive the latest updates about Poblacion, Makati?</h4>
+            <p>subscribe to our newsletter</p>
+            <div class="form-group">
+              <form method="" action="">
+                <input type="email" name="email" placeholder="your email">
+                <button type="submit" class="btn-subscribe btn-warning">subscribe</button>
+              </form>
+            </div> <!-- /.form-group -->
+            <div class="social">
+              <h4>Stay Updated</h4>
+              <a href="https://www.facebook.com/ninakimmf"><img src="img/fbb.png"></a>
+            </div>
+          </div> <!-- /.subscribe -->
+        </div> <!-- /.footer -->
+      </div> <!-- /.row -->
+
+   <script>
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: 14.566139, lng: 121.031589},
-          zoom: 16
+          center: {lat: 14.564148, lng: 121.030304},
+          zoom: 17
         });
 
-        var marker = new google.maps.Marker({
+         var marker = new google.maps.Marker({
           position: {lat: 14.563613, lng: 121.029280},
           map: map,
           title: 'Ziggurat'
+        });
+
+         var marker = new google.maps.Marker({
+          position: {lat: 14.562829, lng: 121.030707},
+          map: map,
+          title: 'El Chupacabra'
+        });
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.563888, lng: 121.031372},
+          map: map,
+          title: 'Z Hostel'
+        });
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.564646, lng: 121.029499},
+          map: map,
+          title: 'Antidote'
+        });
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.563935, lng: 121.031493},
+          map: map,
+          title: 'Pura Vida'
+        });
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.562664, lng: 121.030023},
+          map: map,
+          title: 'Commune'
+        });    
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.563819, lng: 121.030471},
+          map: map,
+          title: 'Kismet Cafe'
+        });    
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.562719, lng: 121.029334},
+          map: map,
+          title: 'Bean and Yolk'
+        });    
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.563504, lng: 121.029663},
+          map: map,
+          title: 'Filling Station Bar and cafe'
+        });    
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.565105, lng: 121.029732},
+          map: map,
+          title: 'Hummus Elijah'
+        });
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.56399, lng: 121.031507},
+          map: map,
+          title: 'Polilya'
+        });
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.565700, lng: 121.031005},
+          map: map,
+          title: 'Dulo MNL'
+        });
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.562758, lng: 121.032968},
+          map: map,
+          title: 'Holy Smokes'
+        });
+
+          var marker = new google.maps.Marker({
+          position: {lat: 14.564074, lng: 121.032157},
+          map: map,
+          title: 'OTO'
         });
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTDfd4C-Mcj65Y11gI-BteAXCWMLTwLl4&callback=initMap"
     async defer></script>
 
-       <script src="https://cdn.jsdelivr.net/gmap3/7.2.0/gmap3.min.js"></script>
+    
+  <!-- Import Map -->
+  <script src="https://cdn.jsdelivr.net/gmap3/7.2.0/gmap3.min.js"></script>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <!-- Import Jquery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- Import bootsrtap JavaScript -->
+  <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
 
   </body>
