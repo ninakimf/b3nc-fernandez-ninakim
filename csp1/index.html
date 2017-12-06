@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta http-equiv="X-UA-compatible" content="IE-Edge">
 
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon1.ico" type="image/x-icon">
+
 	    <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -43,18 +46,16 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="#">Poblacion</a>
+					<a class="navbar-brand" href="index.html">Poblacion</a>
 				</div> <!-- /.container-fluid -->
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li><a href="#">History</a></li>
-						<li><a href="#">Rooftop</a></li>
-						<li><a href="#">Cafe</a></li>
+						<li><a href="rooftops.html">Rooftop</a></li>
+						<li><a href="cafe.html">Cafe</a></li>
 						<li><a href="bars.html">Bars</a></li>
-						<li><a href="#">Restaurants</a></li>
-						<li><a href="map.html">Map</a></li>
+						<li><a href="restaurants.html">Restaurants</a></li>
 						</li> <!-- /.dropdown -->
 					</ul> <!-- /.nav navbar -->
 				</div><!-- /.navbar-collapse -->
@@ -73,7 +74,7 @@
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner" role="listbox">
 					<div class="item active">
-						<img class="center-block" src="img/poblacion.jpg" alt="..." width="100%">
+						<img class="center-block img-responsive" src="img/poblacion.jpg" alt="..." width="100%">
 						<div class="carousel-caption">
 							<h1>Explore Poblacion!</h1>
 							<p>Find the best spots to eat, chill and drink.</p>
@@ -81,16 +82,7 @@
 						</div>
 					</div>
 					<div class="item">
-						<img class="center-block" src="img/commune.jpg" alt="..." height="700px">
-						<div class="carousel-caption">
-							<h1>Explore Poblacion!</h1>
-							<p>Find the best spots to eat, chill and drink.</p>
-							<p><a class="btn btn-default btn-lg" href="#explore" role="button"> Start Exploring</a></p>
-						</div>
-					</div>
-
-					<div class="item">
-						<img class="icenter-block" src="img/antidote1.jpg" alt="...">
+						<img class="center-block img-responsive" src="img/commune.jpg" alt="..." height="700px">
 						<div class="carousel-caption">
 							<h1>Explore Poblacion!</h1>
 							<p>Find the best spots to eat, chill and drink.</p>
@@ -99,7 +91,16 @@
 					</div>
 
 					<div class="item">
-						<img class="center-block" src="img/puravida1.jpg" alt="..." width="100%">
+						<img class="icenter-block img-responsive" src="img/antidote1.jpg" alt="...">
+						<div class="carousel-caption">
+							<h1>Explore Poblacion!</h1>
+							<p>Find the best spots to eat, chill and drink.</p>
+							<p><a class="btn btn-default btn-lg" href="#explore" role="button"> Start Exploring</a></p>
+						</div>
+					</div>
+
+					<div class="item">
+						<img class="center-block img-responsive" src="img/puravida1.jpg" alt="..." width="100%">
 						<div class="carousel-caption">
 							<h1>Explore Poblacion!</h1>
 							<p>Find the best spots to eat, chill and drink.</p>
@@ -127,7 +128,7 @@
 					<div class="col-lg-1 col-md-1"></div>
 					
 					<div class="col-lg-5 col-md-5">
-						<a class="rooftop" href="#">
+						<a class="rooftop" href="rooftops.html">
 							<div class="jumbotron-rooftop">
 								<h1>Rooftops</h1>
 							</div> <!-- /.jumbotron-rooftop -->
@@ -135,9 +136,9 @@
 					</div>
 
 					<div class="col-lg-5 col-md-5">
-						<a class="cafe" href="#">
+						<a class="cafe" href=cafe.html>
 							<div class="jumbotron-cafe">
-								<h1>Cafe</h1>
+								<h1>Cafes</h1>
 							</div> <!-- /.jumbotron-cafe -->
 						</a> <!-- /.cafe -->
 					</div>
@@ -158,7 +159,7 @@
 					</div>
 
 					<div class="col-lg-5 col-md-5">
-						<a class="resstaurants" href="#">
+						<a class="resstaurants" href="restaurants.html">
 							<div class="jumbotron-restaurants">
 								<h1>Restaurants</h1>
 							</div> <!-- /.jumbotron-restaurants -->
@@ -188,25 +189,29 @@
 			</div>
 		</div><!-- /.container -->
 
-			<div class="row">
-
-				<div class="footer col-sm-12">
-					<div class="subscribe col-sm-12 col-lg-12 col-md-12">
-						<h4>Want to receive the latest updates about Poblacion, Makati?</h4>
-						<p>subscribe to our newsletter</p>
-						<div class="form-group">
-							<form method="" action="">
-								<input type="email" name="email" placeholder="your email">
-								<button type="submit" class="btn-subscribe btn-warning">subscribe</button>
-							</form>
-						</div> <!-- /.form-group -->
-						<div class="social">
-							<h4>Stay Updated</h4>
-							<a href="https://www.facebook.com/ninakimmf"><img src="img/fbb.png"></a>
-						</div>
-					</div> <!-- /.subscribe -->
-				</div> <!-- /.footer -->
-			</div> <!-- /.row -->
+		<div class="row">
+			<div class="footer col-sm-12">
+				<div class="subscribe col-sm-12 col-lg-12 col-md-12">
+					<h4>Want to receive the latest updates about Poblacion, Makati?</h4>
+					<p>subscribe to our newsletter</p>
+					<div class="form-group">
+						<form method="" action="">
+							<input type="email" name="email" placeholder="your email">
+							<button type="submit" class="btn-subscribe btn-warning">subscribe</button>
+						</form>
+					</div> <!-- /.form-group -->
+					<div class="social">
+						<h4>Stay Updated</h4>
+						<a href="https://www.facebook.com"><img src="img/fb.png"></a>
+						<a href="https://www.instagram.com"><img src="img/iggg.png"></a>
+						<a href="https://www.twitter.com"><img src="img/twt.png"></a>
+					</div>
+				</div> <!-- /.subscribe -->
+				<div class="copy">
+					<small id="copy">Copyright &copy; 2017 by Nina Kim Fernandez</small>
+				</div>
+			</div> <!-- /.footer -->
+		</div> <!-- /.row -->
 
 	</div> <!-- /.container-fluid -->
 

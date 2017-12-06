@@ -19,6 +19,8 @@ body {
 	padding: 0;
 }
 
+
+
 /*IMPORT FONTS*/
 @font-face {
 	font-family: 'The Blacklist';
@@ -34,8 +36,11 @@ body {
 	font-family: 'Ostrich Sans Inline-regular';
 	src: url('../fonts/Ostrich Sans Inline-regular.otf');
 }
-
 @media only screen and (max-width: 400px) {
+.navbar {
+		background-color: #fe7a47;
+	}
+
 	.navbar {
 		background-color: #fe7a47;
 	}
@@ -43,8 +48,8 @@ body {
 	.jumbotron {
 		/*margin-top: 50px;*/
 		padding: 0;
-	    background-image: url(../img/bar.jpg);
-	    background-position: 50% 50%;
+	    background-image: url(../img/antidote1.jpg);
+	    background-position: 30% 40%;
 	    background-size: cover;
 	    background-repeat: no-repeat;
 	    color: white;
@@ -79,28 +84,41 @@ body {
 		text-shadow: 10px 10px 20px #fe7a47;
 		font-size: 50px;
 		text-align: center;
-		/*margin-top: 50px;*/
 		letter-spacing: 5px;
 		transform: translate(0, -20%);
 	}
-
 	.dulo img {
 		float: right;
 		width: 200px;
 		height: 200px;
-		margin-right: 20px;
+		margin-left: 20px;
 	}
 
 	.dulo h2 {
-		margin-right: 20px;
+		margin-right: 10px;
 		margin-top: 100px;
+		display: block;
 		text-align: right;
 	}
+
+	.desc {
+		margin-left: 20px;
+		margin-top: 20px;
+		padding-right: 10px;
+		margin-right: 20px;
+	}
+
+	.desc1 {
+		margin-left: 30px;
+		margin-top: 20px;
+		padding-right: 10px;
+	}
+
 
 	.dulo p {
 		text-align: right;
 		font-style: italic;
-		margin-right: 20px;
+		margin-right: 10px;
 		margin-top: -10px;
 	}
 
@@ -108,86 +126,26 @@ body {
 		float: left;
 		width: 200px;
 		height: 200px;
-		margin-left: 20px;
+		margin-left: 10px;
+		margin-right: 20px;
 	}
 
 	.fstation h2 {
-		margin-left: 20px;
-		margin-top: 50px;
+		margin-left: 10px;
 	}
 
 	.fstation p {
 		margin-top: -10px;
-		margin-left: 20px;
-		font-style: italic;
-	}
-
-
-	.oto img {
-		float: right;
-		width: 200px;
-		height: 200px;
-		margin-right: 20px;
-	}
-
-	.oto h2 {
-		margin-right: 20px;
-		margin-top: 50px;
-		text-align: right;
-	}
-
-	.oto p {
-		text-align: right;
+		margin-left: 10px;
 		font-style: italic;
 		margin-right: 20px;
-		margin-top: -10px;
-	}
-
-
-	.polilya img {
-		float: left;
-		width: 200px;
-		height: 200px;
-		margin-left: 20px;
-	}
-
-	.polilya h2 {
-		margin-left: 20px;
-		margin-top: 50px;
-	}
-
-	.polilya p {
-		margin-top: -10px;
-		margin-left: 20px;
-		font-style: italic;
-	}
-
-	.puravida img {
-		float: right;
-		width: 200px;
-		height: 200px;
-		margin-right: 20px;
-		border: 1px solid black;
-	}
-
-	.puravida h2 {
-		margin-right: 20px;
-		margin-top: 50px;
-		text-align: right;
-	}
-
-	.puravida p {
-		text-align: right;
-		font-style: italic;
-		margin-right: 20px;
-		margin-top: -10px;
 	}
 
 	.footer {
 		background-color: #fe7a47;
 		color: white;
 		margin-top: 30px;
-		height: 220px;
+		height: 200px;
 		text-align: center;
 	}
 
@@ -212,7 +170,9 @@ body {
 
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-
+	.navbar {
+		background-color: #fe7a47;
+	}
 
 	.navbar {
 		background-color: #fe7a47;
@@ -221,7 +181,7 @@ body {
 	.jumbotron {
 		/*margin-top: 50px;*/
 		padding: 0;
-	    background-image: url(../img/bar.jpg);
+	    background-image: url(../img/antidote1.jpg);
 	    background-position: 30% 40%;
 	    background-size: cover;
 	    background-repeat: no-repeat;
@@ -266,19 +226,34 @@ body {
 		float: right;
 		width: 200px;
 		height: 200px;
-		margin-right: 20px;
+		margin-left: 20px;
 	}
 
 	.dulo h2 {
-		margin-right: 20px;
+		margin-right: 10px;
 		margin-top: 100px;
+		display: block;
 		text-align: right;
 	}
+
+	.desc {
+		margin-left: 20px;
+		margin-top: 50px;
+		padding-right: 10px;
+		margin-right: 20px;
+	}
+
+	.desc1 {
+		margin-left: 30px;
+		margin-top: 50px;
+		padding-right: 10px;
+	}
+
 
 	.dulo p {
 		text-align: right;
 		font-style: italic;
-		margin-right: 20px;
+		margin-right: 10px;
 		margin-top: -10px;
 	}
 
@@ -286,86 +261,26 @@ body {
 		float: left;
 		width: 200px;
 		height: 200px;
-		margin-left: 20px;
+		margin-left: 10px;
+		margin-right: 20px;
 	}
 
 	.fstation h2 {
-		margin-left: 20px;
-		margin-top: 50px;
+		margin-left: 10px;
 	}
 
 	.fstation p {
 		margin-top: -10px;
-		margin-left: 20px;
-		font-style: italic;
-	}
-
-
-	.oto img {
-		float: right;
-		width: 200px;
-		height: 200px;
-		margin-right: 20px;
-	}
-
-	.oto h2 {
-		margin-right: 20px;
-		margin-top: 50px;
-		text-align: right;
-	}
-
-	.oto p {
-		text-align: right;
+		margin-left: 10px;
 		font-style: italic;
 		margin-right: 20px;
-		margin-top: -10px;
-	}
-
-
-	.polilya img {
-		float: left;
-		width: 200px;
-		height: 200px;
-		margin-left: 20px;
-	}
-
-	.polilya h2 {
-		margin-left: 20px;
-		margin-top: 50px;
-	}
-
-	.polilya p {
-		margin-top: -10px;
-		margin-left: 20px;
-		font-style: italic;
-	}
-
-	.puravida img {
-		float: right;
-		width: 200px;
-		height: 200px;
-		margin-right: 20px;
-		border: 1px solid black;
-	}
-
-	.puravida h2 {
-		margin-right: 20px;
-		margin-top: 50px;
-		text-align: right;
-	}
-
-	.puravida p {
-		text-align: right;
-		font-style: italic;
-		margin-right: 20px;
-		margin-top: -10px;
 	}
 
 	.footer {
 		background-color: #fe7a47;
 		color: white;
 		margin-top: 30px;
-		height: 220px;
+		height: 200px;
 		text-align: center;
 	}
 
@@ -388,18 +303,18 @@ body {
 
 }
 
+
 @media only screen and (min-width: 961px) {
 
 	.navbar {
 		background-color: #fe7a47;
 	}
 
-
 	.jumbotron {
 		/*margin-top: 50px;*/
 		padding: 0;
-	    background-image: url(../img/bar.jpg);
-	    background-position: 0% 50%;
+	    background-image: url(../img/antidote1.jpg);
+	    background-position: 0% 40%;
 	    background-size: cover;
 	    background-repeat: no-repeat;
 	    color: white;
@@ -439,19 +354,34 @@ body {
 		float: right;
 		width: 200px;
 		height: 200px;
-		margin-right: 20px;
+		margin-left: 20px;
 	}
 
 	.dulo h2 {
-		margin-right: 20px;
+		margin-right: 10px;
 		margin-top: 100px;
+		display: block;
 		text-align: right;
 	}
+
+	.desc {
+		margin-left: 20px;
+		margin-top: 50px;
+		padding-right: 10px;
+		margin-right: 20px;
+	}
+
+	.desc1 {
+		margin-left: 30px;
+		margin-top: 50px;
+		padding-right: 10px;
+	}
+
 
 	.dulo p {
 		text-align: right;
 		font-style: italic;
-		margin-right: 20px;
+		margin-right: 10px;
 		margin-top: -10px;
 	}
 
@@ -459,79 +389,8 @@ body {
 		float: left;
 		width: 200px;
 		height: 200px;
-		margin-left: 20px;
-	}
-
-	.fstation h2 {
-		margin-left: 20px;
-		margin-top: 50px;
-	}
-
-	.fstation p {
-		margin-top: -10px;
-		margin-left: 20px;
-		font-style: italic;
-	}
-
-
-	.oto img {
-		float: right;
-		width: 200px;
-		height: 200px;
+		margin-left: 10px;
 		margin-right: 20px;
-	}
-
-	.oto h2 {
-		margin-right: 20px;
-		margin-top: 50px;
-		text-align: right;
-	}
-
-	.oto p {
-		text-align: right;
-		font-style: italic;
-		margin-right: 20px;
-		margin-top: -10px;
-	}
-
-
-	.polilya img {
-		float: left;
-		width: 200px;
-		height: 200px;
-		margin-left: 20px;
-	}
-
-	.polilya h2 {
-		margin-left: 20px;
-		margin-top: 50px;
-	}
-
-	.polilya p {
-		margin-top: -10px;
-		margin-left: 20px;
-		font-style: italic;
-	}
-
-	.puravida img {
-		float: right;
-		width: 200px;
-		height: 200px;
-		margin-right: 20px;
-		border: 1px solid black;
-	}
-
-	.puravida h2 {
-		margin-right: 20px;
-		margin-top: 50px;
-		text-align: right;
-	}
-
-	.puravida p {
-		text-align: right;
-		font-style: italic;
-		margin-right: 20px;
-		margin-top: -10px;
 	}
 
 	.footer {

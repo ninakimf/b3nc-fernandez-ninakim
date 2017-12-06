@@ -40,11 +40,6 @@ body {
 		background-color: #fe7a47;
 	}
 
-	.carousel-inner {
-		height: 500px;
-		width: 100%;
-
-	}
 
 	.carousel-fade .carousel-inner .item {
 		transition-property: opacity;
@@ -79,9 +74,9 @@ body {
 
 	.carousel h1 {
 	    color: white;
-	    word-spacing: 5px;
-	    letter-spacing: 0;
-	    font-size: 30px;
+	    /*word-spacing: 5px;*/
+	    /*letter-spacing: 5px;*/
+	    font-size: 40px;
 		font-family: Ostrich Sans Inline-regular;
 		text-shadow: 10px 10px 20px #fe7a47;
 	}
@@ -94,189 +89,51 @@ body {
 
 	.carousel-inner> .item> img {
 		width: 100%;
-		height: 350px;
+		height: 900px;
 	}
 
-	.carousel-inner {
-		padding: 0;
-		margin: 0;
-	}
-
-	.jumbotron-cafe > h1,
-	.jumbotron-rooftop > h1, 
-	.jumbotron-bars > h1, 
-	.jumbotron-restaurants > h1 {
-		top: 50%;
-		transform: translate(0%, 50%);
-		font-size: 30px;
-	}
-
-	.jumbotron-rooftop {
-		/*margin-top: 50px;*/
-		/*padding: 0;*/
-	    background-image: url(../img/rooftop.jpg);
-	    background-position: 0% 40%;
-	    background-size: cover;
-	    background-repeat: no-repeat;
-	    color: white;
-	    text-shadow: black 0.3em 0.3em 0.3em;
-	    height: 70px;
-		text-align: center;
-		border-radius: 6px;
-
-	}
-
-	.jumbotron-cafe {
-		background-image: url(../img/cafe.jpg);
-	    background-position: 0% 60%;
-	    background-size: cover;
-	    background-repeat: no-repeat;
-	    color: white;
-	    text-shadow: black 0.3em 0.3em 0.3em;
-	    height: 70px;
-		text-align: center;
-		border-radius: 6px;
-	}
-
-	.jumbotron-bars {
-		background-image: url(../img/bar.jpg);
-	    background-position: 0% 20%;
-	    background-size: cover;
-	    background-repeat: no-repeat;
-	    color: white;
-	    text-shadow: black 0.3em 0.3em 0.3em;
-	    height: 70px;
-		text-align: center;
-		border-radius: 6px;
-	}
-
-	.jumbotron-restaurants {
-		background-image: url(../img/restaurant.jpg);
-	    background-position: 0% 70%;
-	    background-size: cover;
-	    background-repeat: no-repeat;
-	    color: white;
-	    text-shadow: black 0.3em 0.3em 0.3em;
-	    height: 70px;
-		text-align: center;
-		border-radius: 6px;
-	}
-
-	.jumbo > a {
-		text-decoration: none;
-	}
-
-	.jumbo {
-		/*margin-top: 50px;*/
-		/*padding: 50px;*/
-	}
-
-	.jumbo > h2 {
-		/*margin-top: 50px;*/
-		border-bottom: 2px solid red;
-
-	}
-
-	.jumbotron-cafe:hover,
-	.jumbotron-rooftop:hover,
-	.jumbotron-bars:hover,
-	.jumbotron-restaurants:hover {
+	.btn {
 		opacity: 0.5;
-	}
-
-	.footer {
 		background-color: #fe7a47;
-		color: white;
-		margin-top: 30px;
-		height: 300px;
+		border: none;
+		margin-top: 35%;
+		width: 200px;
+		height: 70px;
+		font-size: 30px;
+		font-family: Ostrich Sans Inline-regular;
 	}
 
-	.subscribe {
-		padding-top: 10px;
+	.categories {
+		border-top: 5px solid #fe7a47;
+		border-bottom: 5px solid #fe7a47;
+		transform: translate(0, 50%);
 	}
 
-	.btn-subscribe {
-		border-radius: 5px;
-	}
-
-	.form-group {
-		color: black;
-	}
-	
-
-}
-
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-
-		.navbar {
-		background-color: #fe7a47;
-	}
-
-	
-	.carousel-fade .carousel-inner .item {
-		transition-property: opacity;
-	}
-	.carousel-fade .carousel-inner .item,
-	.carousel-fade .carousel-inner .active.left,
-	.carousel-fade .carousel-inner .active.right {
-		opacity: 0;
-	}
-	.carousel-fade .carousel-inner .active,
-	.carousel-fade .carousel-inner .next.left,
-	.carousel-fade .carousel-inner .prev.right {
-		opacity: 1;
-	}
-	.carousel-fade .carousel-inner .next,
-	.carousel-fade .carousel-inner .prev,
-	.carousel-fade .carousel-inner .active.left,
-	.carousel-fade .carousel-inner .active.right {
-		left: 0;
-		transform: translate3d(0, 0, 0);
-	}
-
-	.carousel-indicators li {
-			visibility: hidden;
-		}
-
-	.item {
-		display: none;
-		position: relative;
-		transition(.3s ease-in-out left);
-	}
-
-	.carousel h1 {
-	    color: white;
-	    word-spacing: 0;
-	    letter-spacing: 0;
-	    font-size: 50px;
+	.categories h2 {
 		font-family: Ostrich Sans Inline-regular;
 		text-shadow: 10px 10px 20px #fe7a47;
+		font-size: 50px;
+		text-align: center;
+		/*margin-top: 50px;*/
+		letter-spacing: 5px;
+		transform: translate(0, -20%);
 	}
 
-	.carousel-caption {
-		top: 0;
-		bottom: auto;
-		margin-top: 10px;
-		}
-
-	.carousel-inner> .item> img {
-		width: 100%;
-		height: 350px;
+	.selection {
+		margin-top: 70px;
 	}
-
-	
 
 	.jumbotron-cafe > h1,
 	.jumbotron-rooftop > h1, 
 	.jumbotron-bars > h1, 
 	.jumbotron-restaurants > h1 {
 		top: 50%;
-		transform: translate(0%, 50%);
-		font-size: 30px;
+		transform: translate(0%, 120%);
+		font-size: 25px;
 	}
 
 	.jumbotron-rooftop {
-		/*margin-top: 50px;*/
+		/*margin-top: 70px;*/
 		/*padding: 0;*/
 	    background-image: url(../img/rooftop.jpg);
 	    background-position: 0% 40%;
@@ -284,7 +141,7 @@ body {
 	    background-repeat: no-repeat;
 	    color: white;
 	    text-shadow: black 0.3em 0.3em 0.3em;
-	    height: 70px;
+	    height: 100px;
 		text-align: center;
 		border-radius: 6px;
 	}
@@ -296,7 +153,7 @@ body {
 	    background-repeat: no-repeat;
 	    color: white;
 	    text-shadow: black 0.3em 0.3em 0.3em;
-	    height: 70px;
+	    height: 100px;
 		text-align: center;
 		border-radius: 6px;
 	}
@@ -308,7 +165,7 @@ body {
 	    background-repeat: no-repeat;
 	    color: white;
 	    text-shadow: black 0.3em 0.3em 0.3em;
-	    height: 70px;
+	    height: 100px;
 		text-align: center;
 		border-radius: 6px;
 	}
@@ -320,7 +177,7 @@ body {
 	    background-repeat: no-repeat;
 	    color: white;
 	    text-shadow: black 0.3em 0.3em 0.3em;
-	    height: 70px;
+	    height: 100px;
 		text-align: center;
 		border-radius: 6px;
 	}
@@ -330,7 +187,7 @@ body {
 	}
 
 	.jumbo > h2 {
-		margin-top: 50px;
+		margin: 50px 50px 0px 50px;
 		border-bottom: 2px solid red;
 	}
 
@@ -345,12 +202,28 @@ body {
 		opacity: 0.5;
 	}
 
+	.explore {
+		border-top: 5px solid #fe7a47;
+		border-bottom: 5px solid #fe7a47;
+		transform: translate(0, 50%);
+	}
+
+	.explore h2 {
+		font-family: Ostrich Sans Inline-regular;
+		text-shadow: 10px 10px 20px #fe7a47;
+		font-size: 50px;
+		text-align: center;
+		/*margin-top: 50px;*/
+		letter-spacing: 5px;
+		transform: translate(0, -20%);
+	}
+
 	.footer {
 		background-color: #fe7a47;
 		color: white;
 		margin-top: 30px;
-		height: 300px;
-		text-align: center; 
+		height: 200px;
+		text-align: center;
 	}
 
 	.subscribe {
@@ -365,6 +238,243 @@ body {
 		color: black;
 	}
 	
+	.social img {
+		height: 20px;
+		width: 20px;
+	}
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+	.navbar {
+		background-color: #fe7a47;
+	}
+
+	.jumbotron {
+		/*margin-top: 50px;*/
+		padding: 0;
+	    background-image: url(../img/bar.jpg);
+	    background-position: 0% 30%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 500px;
+	    top: 50%;
+		left: 50%;
+		transform: translate(0%, 10%);
+
+	}
+
+	.jumbotron h1 {
+	    color: white;
+	    word-spacing: 5px;
+	    letter-spacing: 5px;
+	    font-size: 100px;
+		font-family: Ostrich Sans Inline-regular;
+		text-shadow: 10px 10px 20px #fe7a47;
+	}
+
+	.carousel-fade .carousel-inner .item {
+		transition-property: opacity;
+	}
+	.carousel-fade .carousel-inner .item,
+	.carousel-fade .carousel-inner .active.left,
+	.carousel-fade .carousel-inner .active.right {
+		opacity: 0;
+	}
+	.carousel-fade .carousel-inner .active,
+	.carousel-fade .carousel-inner .next.left,
+	.carousel-fade .carousel-inner .prev.right {
+		opacity: 1;
+	}
+	.carousel-fade .carousel-inner .next,
+	.carousel-fade .carousel-inner .prev,
+	.carousel-fade .carousel-inner .active.left,
+	.carousel-fade .carousel-inner .active.right {
+		left: 0;
+		transform: translate3d(0, 0, 0);
+	}
+
+	.carousel-indicators li {
+			visibility: hidden;
+		}
+
+	.item {
+		display: none;
+		position: relative;
+		transition(.3s ease-in-out left);
+	}
+
+	.carousel h1 {
+	    color: white;
+	    /*word-spacing: 5px;*/
+	    /*letter-spacing: 5px;*/
+	    font-size: 75px;
+		font-family: Ostrich Sans Inline-regular;
+		text-shadow: 10px 10px 20px #fe7a47;
+	}
+
+	.carousel-caption {
+		top: 0;
+		bottom: auto;
+		margin-top: 10px;
+	}
+
+	.carousel-inner> .item> img {
+		width: 100%;
+		height: 900px;
+	}
+
+	.btn {
+		opacity: 0.5;
+		background-color: #fe7a47;
+		border: none;
+		margin-top: 35%;
+		width: 350px;
+		height: 100px;
+		font-size: 50px;
+		font-family: Ostrich Sans Inline-regular;
+	}
+
+	.categories {
+		border-top: 5px solid #fe7a47;
+		border-bottom: 5px solid #fe7a47;
+		transform: translate(0, 50%);
+	}
+
+	.categories h2 {
+		font-family: Ostrich Sans Inline-regular;
+		text-shadow: 10px 10px 20px #fe7a47;
+		font-size: 50px;
+		text-align: center;
+		/*margin-top: 50px;*/
+		letter-spacing: 5px;
+		transform: translate(0, -20%);
+	}
+
+	.selection {
+		margin-top: 70px;
+	}
+
+	.jumbotron-cafe > h1,
+	.jumbotron-rooftop > h1, 
+	.jumbotron-bars > h1, 
+	.jumbotron-restaurants > h1 {
+		top: 50%;
+		transform: translate(0%, 120%);
+		font-size: 25px;
+	}
+
+	.jumbotron-rooftop {
+		/*margin-top: 70px;*/
+		/*padding: 0;*/
+	    background-image: url(../img/rooftop.jpg);
+	    background-position: 0% 40%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 100px;
+		text-align: center;
+		border-radius: 6px;
+	}
+
+	.jumbotron-cafe {
+		background-image: url(../img/cafe.jpg);
+	    background-position: 0% 60%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 100px;
+		text-align: center;
+		border-radius: 6px;
+	}
+
+	.jumbotron-bars {
+		background-image: url(../img/bar.jpg);
+	    background-position: 0% 20%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 100px;
+		text-align: center;
+		border-radius: 6px;
+	}
+
+	.jumbotron-restaurants {
+		background-image: url(../img/restaurant.jpg);
+	    background-position: 0% 70%;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    color: white;
+	    text-shadow: black 0.3em 0.3em 0.3em;
+	    height: 100px;
+		text-align: center;
+		border-radius: 6px;
+	}
+
+	.jumbo > a {
+		text-decoration: none;
+	}
+
+	.jumbo > h2 {
+		margin: 50px 50px 0px 50px;
+		border-bottom: 2px solid red;
+	}
+
+	.jumbo {
+		margin-top: 80px;
+	}
+
+	.jumbotron-cafe:hover,
+	.jumbotron-rooftop:hover,
+	.jumbotron-bars:hover,
+	.jumbotron-restaurants:hover {
+		opacity: 0.5;
+	}
+
+	.explore {
+		border-top: 5px solid #fe7a47;
+		border-bottom: 5px solid #fe7a47;
+		transform: translate(0, 50%);
+	}
+
+	.explore h2 {
+		font-family: Ostrich Sans Inline-regular;
+		text-shadow: 10px 10px 20px #fe7a47;
+		font-size: 50px;
+		text-align: center;
+		/*margin-top: 50px;*/
+		letter-spacing: 5px;
+		transform: translate(0, -20%);
+	}
+
+	.footer {
+		background-color: #fe7a47;
+		color: white;
+		margin-top: 30px;
+		height: 200px;
+		text-align: center;
+	}
+
+	.subscribe {
+		padding-top: 10px;
+	}
+
+	.btn-subscribe {
+		border-radius: 5px;
+	}
+
+	.form-group {
+		color: black;
+	}
+	
+	.social img {
+		height: 20px;
+		width: 20px;
+	}
 }
 
 @media only screen and (min-width: 961px) {
@@ -559,7 +669,7 @@ body {
 		opacity: 0.5;
 	}
 
-		.explore {
+	.explore {
 		border-top: 5px solid #fe7a47;
 		border-bottom: 5px solid #fe7a47;
 		transform: translate(0, 50%);
@@ -579,7 +689,7 @@ body {
 		background-color: #fe7a47;
 		color: white;
 		margin-top: 30px;
-		/*height: 300px;*/
+		height: 200px;
 		text-align: center;
 	}
 
@@ -595,4 +705,8 @@ body {
 		color: black;
 	}
 	
+	.social img {
+		height: 20px;
+		width: 20px;
+	}
 }
