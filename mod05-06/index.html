@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+
+		body {
+			text-align: center;
+		}
+
+	</style>
+</head>
+<body>
+<div class="container">
+	<h1>Sample JS</h1>
+
+	<h2>Night Class</h2>
+
+	<input type="number" id="input"> <button id="btn" onclick="dRaw()">Draw!</button>
+	<div id="loopDisplay"></div>
+</div>	
+
+
+<script>
+
+
+	// var sumOdd = 0
+	// var sumEven = 0
+
+	// var x = 0 /*variable declaration*/
+	// while (x<=50) { /*coondition*/
+	// 	if (x%2==0)
+	// 		sumEven += x;
+	// 	else 
+	// 		sumOdd += x;
+	// 	x++; /*variable modification*/
+	// }
+
+	// for(var x = 0; x<=50; x++) {
+
+	// 	var x = 0 /*variable declaration*/
+	// while (x<=50) { /*coondition*/
+	// 	if (x%2==0)
+	// 		sumEven += x;
+	// 	else 
+	// 		sumOdd += x;
+	// 	x++; /*variable modification*/
+	// }
+
+	// alert("Even sum: "+sumEven+", Odd sum: "+sumOdd);
+
+	for(var x=0; x<=20; x++) {
+		if (x%3==0)
+			console.log(x + " is a multiple of 3 but NOT of 5");
+		if (x%5==0)
+			console.log(x + " is a multiple of 5 but NOT of 3");
+		if (x%3==0 && x%5==0)
+			console.log(x + " is a multiple of 3 and 5");
+		if (x%3!==0 && x%5!==0)
+			console.log(x + " is NOT a multiple of 3 and 5 ");
+	}
+
+
+
+	function dRaw() {
+	document.getElementById("loopDisplay").innerHTML = "" 
+	var num = document.getElementById("input").value
+
+
+	for (var x=0; x<=num; x++) {
+		for (var y=0; y<=num; y++){
+		document.getElementById("loopDisplay").innerHTML += " *"
+	}
+	document.getElementById("loopDisplay").innerHTML += "<br>"
+	}
+	}
+
+</script>
+
+
+
+</body>
+</html>
