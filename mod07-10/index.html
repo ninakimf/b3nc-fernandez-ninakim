@@ -4,27 +4,44 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
 	<title>To-Do List</title>
 
+	<link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Reenie+Beanie|Shadows+Into+Light+Two" rel="stylesheet">
+	<!-- Imports custom stylesheet -->
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 <body>
 
 	<main id="container">
-		<h1>To-Do List</h1>
 
-		<input type="text" name="" placeholder="Add new task">
+		<h1>To-Do List </h1>
+
+		<div class="inputBox">
+			
+		<input type="text" name="" placeholder="Add new task" class="input">
 
 		<ul>
-			<li> <span>X </span>Go to potions clas</li>
-			<li> <span>X </span>Buy new robes</li>
-			<li> <span>X </span>Visit Hagrid</li>
+			<li><span><i class="fa fa-trash-o" aria-hidden="true"></i></span> Go to potions class</li>
+			<li><span><i class="fa fa-trash-o" aria-hidden="true"></i></span> Buy new robes</li>
+			<li><span><i class="fa fa-trash-o" aria-hidden="true"></i></span> Visit Hagrid</li>
 		</ul>
-	</main> <!-- /#container -->
+		</div> <!-- /.input -->
 
-<script type="text/javascript" src="js/script.js"></script>
+	</main>  <!-- /#container -->
 
-<!-- Import JQquery -->
-<script type="text/javascript" src="js/lib/jquery-3.2.1.min.js"></script>
+
+	<!-- Imports jQuery -->
+	<script type="text/javascript" src="js/lib/jquery-3.2.1.min.js"></script>
+	<!-- Import bootstrap -->
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+
+	<!-- Imports custom JavaScript -->
+	<script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
