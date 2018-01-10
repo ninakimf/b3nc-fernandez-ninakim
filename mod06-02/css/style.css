@@ -1,0 +1,20 @@
+ul > li {
+	text-transform: capitalize;
+}
+
+table, td {
+	padding: 10px;
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+th {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+td {
+	text-align: center;
+}
