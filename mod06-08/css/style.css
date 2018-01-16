@@ -1,0 +1,23 @@
+body {
+	background-image: url(../img/bg3.jpg);
+	background-size: 100% 100%;
+
+	background-repeat: no-repeat;
+}
+
+.main {
+	text-align: center;
+	margin-top: 50px;
+}
+
+#title {
+	font-weight: bold;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 60px;
+	color: red;
+}
+
+#lyrics {
+	visibility: hidden;
+}
