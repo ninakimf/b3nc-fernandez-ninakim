@@ -8,8 +8,7 @@ function getTitle() {
 
 include 'partials/head.php';
 
-// import json file
-
+// import items.json file
 $file = file_get_contents('assets/items.json');
 $items = json_decode($file, true);
 
@@ -24,28 +23,37 @@ $items = json_decode($file, true);
 	<?php include 'partials/main_header.php'; ?>
 
 	<!-- wrapper -->
-	<main class="wrapper">
+	<main id="catalogWrapper" class="wrapper">
 
 		<h1>Catalog Page</h1>
-		
+
 		<div class="items-wrapper">
+
+			<a href="create_new_item.php">
+				<button class="btn bnt-primary" id="addNewItem">Add New Item</button>				
+			</a>
 			<?php
 
-			foreach ($items as $item) {
+			foreach ($items as $key => $item) {
 				echo '
-					<div class="item-container">
-						<h3>'. $item['name'] . '</h3>
-						<img src="'.$item['image'].'" alt="Mock Data">
-						<p>' . $item['price'] . '</p>
-						<p>'. $item['description'] . '</p>
-					</div><!-- /.item-container -->
+					<div class="item-parent-container form-group">
+						<a href="item.php?id='.$key.'">
+						<div class="item-container">
+							<h3>'.$item['name'].'</h3>
+							<img src="'.$item['image'].'" alt="Mock data">
+							<p>PHP '.$item['price'].'</p>
+							<p>'.$item['description'].'</p>
+						</div>  <!-- /.item-container -->
+						</a>
+						<button class="btn btn-primary form-control">Add to Cart</button>
+					</div>
 				';
 			}
 
 			?>
-		</div> <!-- /.items-wrapper -->
-
-	</main>
+		</div>  <!-- /.items-wrapper -->
+		
+	</main>  <!-- /.wrapper -->
 
 	<!-- main footer -->
 	<?php include 'partials/main_footer.php'; ?>
