@@ -63,10 +63,20 @@
         "category": "Category 6"
     },
     {
-        "name": "Red Horse",
-        "description": "Eto ang tama!",
-        "image": "anti.jpg",
-        "price": "55",
-        "category": "category3"
+        "name": "Beer 5",
+        "image": "assets\/images\/mock_beer.jpg",
+        "price": "100",
+        "description": "The beer number 1",
+        "category": null,
+        "role": null,
+        "categories": null
+    },
+    {
+        "name": "Beer 2",
+        "image": "assets\/images\/mock_beer_1.jpg",
+        "price": "200",
+        "description": "The beer number 2",
+        "category": "Category 3",
+        "role": null
     }
 ]

@@ -27,11 +27,13 @@ $items = json_decode($file, true);
 
 		<h1>Catalog Page</h1>
 
+		<!-- go to add new item page -->
+		<a href="create_new_item.php">
+			<button class="btn btn-primary">Add New Item</button>
+		</a>
+			
 		<div class="items-wrapper">
 
-			<a href="create_new_item.php">
-				<button class="btn bnt-primary" id="addNewItem">Add New Item</button>				
-			</a>
 			<?php
 
 			foreach ($items as $key => $item) {

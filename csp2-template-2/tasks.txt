@@ -14,10 +14,10 @@
 
 - link to view individual user account **done**
 
+- username validation for existing usernames **done**
+
 - admin permission to 'delete' a user account but not 'edit' the account
 
 - user permission to 'edit' and 'delete' the account
-
-- username validation for existing usernames
 
 - list all items in 'catalog' module

@@ -30,7 +30,7 @@ include 'partials/head.php';
 			<input type="password" name="confirmPassword" id="confirmPassword" placeholder="Enter password again" class="form-control" required>
 
 			<label for="email">Email Address</label>
-			<input type="email" name="email" id="email" placeholder="email@domain.com" class="form-control" required diasbled>
+			<input type="email" name="email" id="email" placeholder="email@domain.com" class="form-control" required>
 
 			<input type="submit" name="submit" id="submit" value="Register" class="btn btn-primary">
 		</form>
@@ -53,21 +53,30 @@ include 'partials/foot.php';
 			// console.log(usernameText);
 
 			$.post('assets/username_validation.php',
-				{username: usernameText},
+				{ username: usernameText },
 				function(data, status) {
 					// console.log('Processed: ' + data);
-
 					$('[for="username"]').html(data);
 				});
 		});
 
-		$('#password, #confirmPassword').on('input', function () {
-		  if ($('#password').val() == $('#confirmPassword').val()) {
-		   	$('[for="password"]').text('Password <span class="green-message">matched</span>');
-		  } else {
-		   	$('[for="password"]').text('Password <span class="red-message">mismatched</span>');
-		  } 
-		    
+		$('#confirmPassword').on('input', function() {
+			// console.log($('#password').val());
+			// console.log($('#confirmPassword').val());
+
+			var passwordText = $('#password').val();
+			var confirmPasswordText = $('#confirmPassword').val();
+			if (passwordText != '' || confirmPasswordText != '') {
+				if (passwordText == confirmPasswordText) {
+					// console.log('matched');
+					$('[for="password"]').html('Password <span class="green-message">matched</span>');
+				} else {
+					// console.log('mismatched');
+					$('[for="password"]').html('Password <span class="red-message">mismatched</span>');
+				}
+			} else {
+				$('[for="password"]').html('Password');	
+			}
 		});
 
 		$('#email').on('input', function() {
@@ -75,23 +84,12 @@ include 'partials/foot.php';
 			// console.log(usernameText);
 
 			$.post('assets/email_address_validation.php',
-				{email: emailText},
+				{ email: emailText },
 				function(data, status) {
 					// console.log('Processed: ' + data);
-
 					$('[for="email"]').html(data);
 				});
 		});
-
-		// $('#confirmPassword').on('input', function (){
-		// 	var passwordText = $('#password').val();
-		// 	var confirmPasswordText = $('#confirmPassword').val();
-
-		// 	if ($passwordText == $confirmPasswordText) {
-		// 		// console.log($('[for="password"]').text());
-		// 	} 
-		// });
-
 	</script>
 
 </body>

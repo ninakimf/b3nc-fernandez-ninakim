@@ -24,8 +24,7 @@ h1 {
 }
 
 #loginForm,
-#registerForm,
-#newItemForm {
+#registerForm {
 	width: 40%;
 	margin: 0 auto;
 }
@@ -53,7 +52,6 @@ td {
 	width: 30%;
 	display: inline-block;	
 	margin: 10px;
-	text-decoration: none;
 }
 
 .item-container {
@@ -78,18 +76,6 @@ td {
 
 .item-container h3 {
 	height: 50px;
-}
-
-select {
-	display: block;
-	width: 40%;
-	margin-bottom: 20px;
-}
-
-#addNewItem {
-	display: block;
-	margin-top: 20px;
-	margin-left: 10px;
 }
 
 /* main footer */
