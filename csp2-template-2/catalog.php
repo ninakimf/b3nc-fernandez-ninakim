@@ -12,7 +12,30 @@ include 'partials/head.php';
 $file = file_get_contents('assets/items.json');
 $items = json_decode($file, true);
 
-// var_dump($items);
+// retrieve all categories
+$categories = array_column($items, 'category');
+// sorting categories
+$categories = array_unique($categories);
+sort($categories);
+$result =array(); //empty array
+
+
+// var_export($categories);
+
+// filter item based on chosen category
+if (isset($_GET['search']) && $_GET['category'] !== 'All') {
+	$cat = $_GET['category'];
+	// echo $cat;
+	foreach ($items as $item) {
+		if ($item['category'] == $cat) {
+			array_push($result, $item);
+		}
+	}
+} else {
+	// show all items
+	$result = $items;
+}
+
 
 ?>
 
@@ -31,15 +54,41 @@ $items = json_decode($file, true);
 		<a href="create_new_item.php">
 			<button class="btn btn-primary">Add New Item</button>
 		</a>
+
+		<?php
+
+
+
+		?>
+
+		<form method="GET">
+			
+			<select name="category">
+				<option>All</option>
+				<?php
+
+				foreach ($categories as $category) {
+					if ($category === $_GET['category']) {
+						echo '<option selected>'.$category.'</option>';
+					}
+					echo '<option>'.$category.'</option>';
+				}
+
+				?>
+			</select>
+
+			<button type="submit" name="search">Search</button>
+
+		</form>
 			
 		<div class="items-wrapper">
 
 			<?php
 
-			foreach ($items as $key => $item) {
+			foreach ($result as $key => $item) {
 				echo '
 					<div class="item-parent-container form-group">
-						<a href="item.php?id='.$key.'">
+						<a href="item.php?id='.$item['id'].'">
 						<div class="item-container">
 							<h3>'.$item['name'].'</h3>
 							<img src="'.$item['image'].'" alt="Mock data">
