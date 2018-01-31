@@ -2,21 +2,17 @@
 
 session_start();
 
-if (isset($_SESSION['current_user'])) {
+if (!isset($_SESSION['current_user'])) {
 	header('location: home.php');
 }
 
 function getTitle() {
-	echo 'Welcome to Kraff Beeer Philippines!';
+	echo 'My Cart Page';
 }
 
 include 'partials/head.php';
 
-// create a session variable for cart
-$_SESSION['cart'] = array();
 
-// create session cariable for item counter
-$_SESSION['item_count'] = 0;
 
 ?>
 
@@ -29,8 +25,13 @@ $_SESSION['item_count'] = 0;
 	<!-- wrapper -->
 	<main class="wrapper">
 
-		<h1>Index Page</h1>
-		
+		<h1>My Cart Page</h1>
+		<?php
+
+		var_export($_SESSION['cart']);
+
+		?>
+
 	</main>
 
 	<!-- main footer -->
